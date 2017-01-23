@@ -3,7 +3,7 @@
     .module('foodByMood')
     .factory('FoodFactory', FoodFactory);
 
-  FoodFactory.$inject = ['$http', '$scoop'];
+  FoodFactory.$inject = ['$http', '$scope'];
     return {
       getFoods: function(){
         $http.get(`${rootUrl}/foods`)
