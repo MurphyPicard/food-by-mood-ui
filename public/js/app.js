@@ -8,7 +8,7 @@
       "$stateProvider",
       Router
     ])
-    .factory("Food", [
+    .factory("FoodFactory", [
       "$resource",
       Food
     ])
