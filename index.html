@@ -4,13 +4,50 @@
     <meta charset="utf-8">
     <title>Food by Mood!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-    <script src="./pubic/js/foodbymood.module.js" charset="utf-8"></script>
-    <script src="./public/js/foodbymood.controller.js" charset="utf-8"></script>
-    <script src="./public/js/index.directive.js" charset="utf-8"></script>
-    <script src="./public/js/show.directive.js" charset="utf-8"></script>
+    <script src="./js/foodbymood.module.js" charset="utf-8"></script>
+    <script src="./js/foodbymood.controller.js" charset="utf-8"></script>
+    <script src="./js/index.directive.js" charset="utf-8"></script>
+    <script src="./js/show.directive.js" charset="utf-8"></script>
   </head>
 
-  <body data-ng-controller="foodCtrl as vm">
+  <body data-ng-controller="foodCtrl as main">
+    <h1>Grumblr</h1>
+<button ng-click="getFoods()">Get Foods</button>
 
+<food-index></food-index>
+<food-show></food-show>
+
+<div ng-show="food">
+  <h3>{{food.title}}</h3>
+  <h5>{{food.authorName}}</h5>
+  <button ng-click="destroyFood(food.id)">Delete Food</button>
+  <img src="{{food.photoUrl}}" alt="photo">
+</div>
+
+<form ng-show="food" ng-submit="editFood(food)">
+  <h4>Edit Food</h4>
+  <label for="authorName">Author</label><br>
+  <input type="text" ng-model="food.authorName"><br>
+  <label for="title">Title</label><br>
+  <input type="text" ng-model="food.title"><br>
+  <label for="content">Content</label><br>
+  <input type="text" ng-model="food.content"><br>
+  <label for="photoUrl">Photo URL</label><br>
+  <input type="text" ng-model="food.photoUrl"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<form ng-hide="food" ng-submit="createFood()">
+  <h4>New Food</h4>
+  <label for="authorName">Author</label><br>
+  <input type="text" ng-model="newFood.authorName"><br>
+  <label for="title">Title</label><br>
+  <input type="text" ng-model="newFood.title"><br>
+  <label for="content">Content</label><br>
+  <input type="text" ng-model="newFood.content"><br>
+  <label for="photoUrl">Photo URL</label><br>
+  <input type="text" ng-model="newFood.photoUrl"><br>
+  <input type="submit" value="Submit">
+</form>
   </body>
 </html>
