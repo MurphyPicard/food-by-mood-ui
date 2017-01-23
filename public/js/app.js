@@ -40,6 +40,6 @@
     }
 
     function indexController (Food) {
-      this.foods = Food.query()
+      this.foods = Food.query();
     }
 })();

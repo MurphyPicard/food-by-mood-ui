@@ -1,0 +1,13 @@
+<h2>{{vm.foods.length}} Foods</h2>
+
+<div class="foods">
+  <h3 data-ng-repeat="food in vm.foods">
+    <a data-ui-sref="show">{{food.name}} for President in {{food.mood}}</a>
+  </h3>
+</div>
+
+<form action="/foods" method="post">
+  <input type="text" name="food[name]" placeholder="Name of Food" />
+  <input type="mood" name="food[mood]" placeholder="Mood" />
+  <button type="submit">Nom Nom Nom!</button>
+</form>
