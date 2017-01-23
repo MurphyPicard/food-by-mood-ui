@@ -7,11 +7,11 @@
 
   function FoodCtrl($http, $scope) {
     // var self = this;
-    var rootURL = 'http://localhost:3000';
+    var rootURL = 'http://localhost:3001/api';
 
     //index
     $scope.getFoods = function(){
-      $http.get(`${rootURL}/grumbles`)
+      $http.get(`${rootURL}/foods`)
         .then(function(res){
           $scope.foods = res.data;
           $scope.food = undefined;
@@ -23,10 +23,10 @@
     };
 
     $scope.showFood = function(id){
-      $http.get(`${rootURL}/grumbles/${id}`)
+      $http.get(`${rootURL}/foods/${id}`)
         .then(function(res){
           $scope.food = res.data;
-          console.log($scope.grumble);
+          console.log($scope.food);
         })
         .catch(function(err){
           if(err)console.log(err);
@@ -35,11 +35,11 @@
 
     //delete
     $scope.destroyFood = function(id){
-      $http.delete(`${rootURL}/grumbles/${id}`)
+      $http.delete(`${rootURL}/foods/${id}`)
         .then(function(res){
-          $scope.grumble = undefined;
+          $scope.food = undefined;
           $scope.getFoods();
-          console.log($scope.grumble);
+          console.log($scope.food);
         })
         .catch(function(err){
           if(err)console.log(err);

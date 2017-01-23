@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Food by Mood!</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="./js/foodbymood.module.js" charset="utf-8"></script>
     <script src="./js/foodbymood.controller.js" charset="utf-8"></script>
@@ -11,9 +13,8 @@
   </head>
 
   <body data-ng-controller="foodCtrl as main">
-    <h1>Food By Mood</h1>
+    <h1 class="title">Food By Mood</h1>
 <button ng-click="getFoods()">Get Foods</button>
-
 <food-index></food-index>
 <food-show></food-show>
 
