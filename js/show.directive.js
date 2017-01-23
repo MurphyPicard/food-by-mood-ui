@@ -1,6 +1,6 @@
 (function(){
   angular
-    .module('grumblr')
+    .module('foodByMood')
     .directive('foodShow', foodShow);
 
   function foodShow(){
