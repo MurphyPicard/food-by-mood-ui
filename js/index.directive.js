@@ -18,31 +18,31 @@
       <form ng-hide="food" class="food" ng-submit="createFood(newFood)">
         <h4>New Food</h4>
         <label for="title">Title</label><br>
-        <input type="text" ng-model="createFood.title"><br>
+        <input type="text" ng-model="newFood.title"><br>
 
         <label for="photoUrl">Photo</label><br>
-        <input type="text" ng-model="createFood.photoUrl"><br>
+        <input type="text" ng-model="newFood.photoUrl"><br>
 
         <label for="preptime">Preptime</label><br>
-        <input type="text" ng-model="createFood.preptime"><br>
+        <input type="text" ng-model="newFood.preptime"><br>
 
         <label for="cooktime">Cooktime</label><br>
-        <input type="text" ng-model="createFood.cooktime"><br>
+        <input type="text" ng-model="newFood.cooktime"><br>
 
         <label for="ingredients">Ingredients</label><br>
-        <input type="text" ng-model="createFood.ingredients"><br>
+        <input type="text" ng-model="newFood.ingredients"><br>
 
         <label for="description">Description</label><br>
-        <input type="text" ng-model="createFood.description"><br>
+        <input type="text" ng-model="newFood.description"><br>
 
         <label for="instructions">Instructions</label><br>
-        <input type="text" ng-model="createFood.instructions"><br>
+        <input type="text" ng-model="newFood.instructions"><br>
 
         <label for="mood">Mood</label><br>
-        <input type="text" ng-model="createFood.mood"><br>
+        <input type="text" ng-model="newFood.mood"><br>
 
         <label for="votes">Votes</label><br>
-        <input type="text" ng-model="createFood.votes"><br>
+        <input type="text" ng-model="newFood.votes"><br>
 
         <input type="submit" value="Submit">
     </form>
