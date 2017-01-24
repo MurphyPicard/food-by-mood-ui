@@ -6,7 +6,7 @@
   function foodIndex(){
     return {
       restrict: 'E',
-      template: 
+      template:
         '<div ng-show="food" ng-repeat="e in foods">' +
           '<h3 ng-click="showFood(e.id)">{{e.title}}</h3>' +
         '</div>' +

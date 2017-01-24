@@ -24,8 +24,8 @@
     };
 
 // SHOW
-    $scope.showFood = function(title){
-      $http.get(`${rootURL}/foods/${title}`)
+    $scope.showFood = function(id){
+      $http.get(`${rootURL}/foods/${id}`)
         .then(function(res){
           $scope.food = res.data;
           console.log($scope.food);
@@ -36,8 +36,8 @@
     };
 
     //delete
-    $scope.destroyFood = function(title){
-      $http.delete(`${rootURL}/foods/${title}`)
+    $scope.destroyFood = function(id){
+      $http.delete(`${rootURL}/foods/${id}`)
         .then(function(res){
           $scope.food = undefined;
           $scope.getFoods();
@@ -62,7 +62,7 @@
 
     //edit
     $scope.editFood = function(food){
-      $http.put(`${rootURL}/foods/${$scope.food.title}`, food)
+      $http.put(`${rootURL}/foods/${$scope.food.id}`, food)
         .then(function(res){
           // $scope.getFoods(); //Redirect to Index
           $scope.food = res.data;

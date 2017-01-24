@@ -3,27 +3,33 @@
     .module('foodByMood')
     .directive('foodShow', foodShow);
 
-  function foodShow(){
+function foodShow() {
     return {
       restrict: 'E',
-      template: '<div ng-show="food">' +
-        '<h3>{{food.title}}</h3>' +
-        '<h5>{{food.description}}</h5>' +
-        '<button ng-click="destroyFood(food.id)">Delete Food</button>' +
-        '<img src="{{food.photoUrl}}" alt="photo">' +
-        '</div>' +
-        '<form ng-show="food" ng-submit="editFood(food)">' +
-        '<h4>Edit Food</h4>' +
-        '<label for="authorName">Author</label><br>' +
-        '<input type="text" ng-model="food.authorName"><br>' +
-        '<label for="title">Title</label><br>' +
-        '<input type="text" ng-model="food.title"><br>' +
-        '<label for="content">Content</label><br>' +
-        '<input type="text" ng-model="food.content"><br>' +
-        '<label for="photoUrl">Photo URL</label><br>' +
-        '<input type="text" ng-model="food.photoUrl"><br>' +
-        '<input type="submit" value="Submit">' +
-      '</form>'
+      template: `<div ng-show="food" class="container">
+        <div class="food">
+            <img src="{{food.photoUrl}}">
+            <h3 ng-click="showfood(food.id)">{{food.title}}</h3>
+            <p>{{food.description}}</p>
+            <h4>-{{food.authorName}}</h4>
+            <button ng-click="destroyfood(food.id)">Delete this food</button>
+          </div>
+        </div>
+        <div class="container"><form ng-show="food" class="food" ng-submit="editfood(food)">
+         <h4>Edit food</h4>
+         <label for="authorName">Author</label><br>
+         <input type="text" ng-model="food.authorName" value=""><br>
+         <label for="title">Title</label><br>
+         <input type="text" ng-model="food.title" value=""><br>
+         <label for="content">Content</label><br>
+         <input type="text" ng-model="food.content" value=""><br>
+         <label for="photoUrl">Photo URL</label><br>
+         <input type="text" ng-model="food.photoUrl" value=""><br><br>
+         <input type="submit" value="Edit food">
+              </form></div><div class="footer">
+              </div>`
+
     };
-  };
+  }
+
 })();
