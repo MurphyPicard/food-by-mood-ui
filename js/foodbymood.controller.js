@@ -36,8 +36,8 @@
     };
 
     //delete
-    $scope.destroyFood = function(id){
-      $http.delete(`${rootURL}/foods/${id}`)
+    $scope.destroyFood = function(title){
+      $http.delete(`${rootURL}/foods/${title}`)
         .then(function(res){
           $scope.food = undefined;
           $scope.getFoods();
@@ -62,7 +62,7 @@
 
     //edit
     $scope.editFood = function(food){
-      $http.put(`${rootURL}/foods/${$scope.food.id}`, food)
+      $http.put(`${rootURL}/foods/${$scope.food.title}`, food)
         .then(function(res){
           // $scope.getFoods(); //Redirect to Index
           $scope.food = res.data;

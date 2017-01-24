@@ -10,8 +10,8 @@
         `<div ng-hide="food" ng-repeat="e in foods">
         <div class="container">
           <div class="food">
-            <h2 ng-click="showGrumble(e.id)">{{e.title}}</h2>
-            <img ng-click="showFood(e.id)" src="{{e.photoUrl}}">
+            <h2 ng-click="showFood(e.title)">{{e.title}}</h2>
+            <img ng-click="showFood(e.title)" src="{{e.photoUrl}}">
           </div>
         </div>
       </div><div class="container">
