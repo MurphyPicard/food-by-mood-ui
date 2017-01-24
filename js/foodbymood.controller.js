@@ -3,7 +3,7 @@
     .module('foodByMood')
     .controller('FoodCtrl', FoodCtrl);
 
-  FoodCtrl.$inject = ['$http', '$scope'];
+  FoodCtrl.$inject = ['$http', '$scope', 'FoodFactory'];
 
   function FoodCtrl($http, $scope) {
     // var self = this;
@@ -11,7 +11,7 @@
 
     //index
     $scope.getFoods = function(){
-      $http.get(`${rootURL}/foods`)
+      FoodFactory.get()
         .then(function(res){
           $scope.foods = res.data;
           $scope.food = undefined;

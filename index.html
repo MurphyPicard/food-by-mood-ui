@@ -10,12 +10,15 @@
     <script src="./js/foodbymood.controller.js" charset="utf-8"></script>
     <script src="./js/index.directive.js" charset="utf-8"></script>
     <script src="./js/show.directive.js" charset="utf-8"></script>
+    <script src="./js/grumblr.factory.js" charset="utf-8"></script>
   </head>
 
   <body data-ng-controller="FoodCtrl as main">
+
     <h1 class="title">Food By Mood</h1>
 
-    <button ng-click="getFoods()">Get Foods</button>
+    <button class="myButton" ng-click="getFoods()">Get Foods</button>
+    
     <food-index></food-index>
     <food-show></food-show>
 

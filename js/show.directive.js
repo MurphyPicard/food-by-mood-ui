@@ -8,7 +8,7 @@
       restrict: 'E',
       template: '<div ng-show="food">' +
         '<h3>{{food.title}}</h3>' +
-        '<h5>{{food.authorName}}</h5>' +
+        '<h5>{{food.description}}</h5>' +
         '<button ng-click="destroyFood(food.id)">Delete Food</button>' +
         '<img src="{{food.photoUrl}}" alt="photo">' +
         '</div>' +
