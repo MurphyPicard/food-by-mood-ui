@@ -54,6 +54,7 @@
         .then(function(res){
           $scope.foods = res.data;
           console.log($scope.foods);
+          $scope.getFoods();
         })
         .catch(function(err){
           if(err)console.log(err);
