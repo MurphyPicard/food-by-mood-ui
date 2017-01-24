@@ -24,10 +24,10 @@
         <input type="text" ng-model="newFood.photoUrl"><br>
 
         <label for="preptime">Preptime</label><br>
-        <input type="text" ng-model="newFood.preptime"><br>
+        <input type="text" ng-model="newFood.prepTime"><br>
 
         <label for="cooktime">Cooktime</label><br>
-        <input type="text" ng-model="newFood.cooktime"><br>
+        <input type="text" ng-model="newFood.cookTime"><br>
 
         <label for="ingredients">Ingredients</label><br>
         <input type="text" ng-model="newFood.ingredients"><br>
