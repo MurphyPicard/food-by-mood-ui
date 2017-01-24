@@ -24,7 +24,7 @@ function foodShow() {
 
           <div class="container">
             <form ng-show="food" class="food" ng-submit="editFood(food)">
-              <h4>Edit food</h4>
+              <h4>Edit Food</h4>
               <label for="title">Title</label><br>
               <input type="text" ng-model="food.title"><br>
 
@@ -48,12 +48,12 @@ function foodShow() {
 
               <label for="mood">mood</label><br>
               <input type="text" ng-model="food.mood"><br> <br><br>
-              <input type="submit" value="Edit food">
+              <input type="submit" value="Edit Food">
             </form>
           </div>
 
           <div class="footer">
-              
+
           </div>`
 
 

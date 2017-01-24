@@ -62,11 +62,11 @@
 
     //edit
     $scope.editFood = function(food){
-      $http.put(`${rootURL}/foods/${$scope.food.id}`, food)
+      $http.put(`${rootURL}/foods/${$scope.food.title}`, food)
         .then(function(res){
           // $scope.getFoods(); //Redirect to Index
           $scope.food = res.data;
-          console.log($scope.foods);
+          console.log($scope.food);
         })
         .catch(function(err){
           if(err)console.log(err);
