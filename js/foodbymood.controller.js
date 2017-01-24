@@ -5,7 +5,7 @@
 
   FoodCtrl.$inject = ['$http', '$scope', 'FoodFactory'];
 
-  function FoodCtrl($http, $scope) {
+  function FoodCtrl($http, $scope, FoodFactory) {
     // var self = this;
     var rootURL = 'http://localhost:3001/api';
 
