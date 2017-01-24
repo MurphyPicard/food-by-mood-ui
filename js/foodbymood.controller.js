@@ -62,9 +62,10 @@
 
     //edit
     $scope.editFood = function(food){
-      $http.put(`${rootURL}/foods/${$scope.food.title}`, food)
+      $http.put(`${rootURL}/foods`, food)
         .then(function(res){
           // $scope.getFoods(); //Redirect to Index
+          console.log("This is the updated version of the food >>>>>>>   ", res.data);
           $scope.food = res.data;
           console.log($scope.foods);
         })

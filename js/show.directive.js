@@ -53,7 +53,7 @@ function foodShow() {
           </div>
 
           <div class="footer">
-              
+
           </div>`
 
 
