@@ -24,8 +24,8 @@
     };
 
 // SHOW
-    $scope.showFood = function(id){
-      $http.get(`${rootURL}/foods/${id}`)
+    $scope.showFood = function(title){
+      $http.get(`${rootURL}/foods/${title}`)
         .then(function(res){
           $scope.food = res.data;
           console.log($scope.food);
@@ -62,11 +62,12 @@
 
     //edit
     $scope.editFood = function(food){
-      $http.put(`${rootURL}/foods/${$scope.food.title}`, food)
+      $http.put(`${rootURL}/foods`, food)
         .then(function(res){
           // $scope.getFoods(); //Redirect to Index
+          console.log("This is the updated version of the food >>>>>>>   ", res.data);
           $scope.food = res.data;
-          console.log($scope.food);
+          console.log($scope.foods);
         })
         .catch(function(err){
           if(err)console.log(err);

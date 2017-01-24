@@ -48,6 +48,7 @@ function foodShow() {
 
               <label for="mood">mood</label><br>
               <input type="text" ng-model="food.mood"><br> <br><br>
+
               <input type="submit" value="Edit Food">
             </form>
           </div>

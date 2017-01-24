@@ -45,8 +45,9 @@
         <input type="text" ng-model="newFood.votes"><br>
 
         <input type="submit" value="Submit">
-    </form>
-      </form></div>`
+        
+        </form>
+      </div>`
 
       };
     }
