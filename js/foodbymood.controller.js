@@ -13,17 +13,19 @@
     $scope.getFoods = function(){
       FoodFactory.get()
         .then(function(res){
-          $scope.foods = res.data;
-          $scope.food = undefined;
-          console.log($scope.foods);
+          FoodFactory.foods = res.data;
+            console.log(FoodFactory.foods);
+            $scope.foods = FoodFactory.foods;
+            $scope.food = undefined;
         })
         .catch(function(err){
           if(err)console.log(err);
         });
     };
 
-    $scope.showFood = function(id){
-      $http.get(`${rootURL}/foods/${id}`)
+// SHOW
+    $scope.showFood = function(title){
+      $http.get(`${rootURL}/foods/${title}`)
         .then(function(res){
           $scope.food = res.data;
           console.log($scope.food);
@@ -34,8 +36,8 @@
     };
 
     //delete
-    $scope.destroyFood = function(id){
-      $http.delete(`${rootURL}/foods/${id}`)
+    $scope.destroyFood = function(title){
+      $http.delete(`${rootURL}/foods/${title}`)
         .then(function(res){
           $scope.food = undefined;
           $scope.getFoods();
@@ -50,7 +52,8 @@
     $scope.createFood = function(food){
       $http.post(`${rootURL}/foods`, food)
         .then(function(res){
-          console.log(res.data);
+          $scope.foods = res.data;
+          console.log($scope.foods);
         })
         .catch(function(err){
           if(err)console.log(err);
@@ -59,11 +62,11 @@
 
     //edit
     $scope.editFood = function(food){
-      $http.put(`${rootURL}/foods/${$scope.food.id}`, food)
+      $http.put(`${rootURL}/foods/${$scope.food.title}`, food)
         .then(function(res){
           // $scope.getFoods(); //Redirect to Index
           $scope.food = res.data;
-          console.log(res.data);
+          console.log($scope.foods);
         })
         .catch(function(err){
           if(err)console.log(err);
