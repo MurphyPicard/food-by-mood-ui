@@ -60,6 +60,10 @@
         .then(function(res){
           $scope.food = res.data;
           console.log($scope.food);
+          var e = document.getElementById("mainSelect");
+
+          var moodVal = e.options[e.selectedIndex].value;
+          console.log("moodVal");
         })
         .catch(function(err){
           if(err)console.log(err);

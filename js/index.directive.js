@@ -42,13 +42,13 @@
 
               <label for="mood">Mood</label><br>
               <select ng-model="newFood.mood">
-                <option value="happy">Happy</option>
-                <option value="sad">Sad</option>
-                <option value="comfortable">Comfortable</option>
-                <option value="excited">Exciting</option>
-                <option value="scared">Scary</option>
-                <option value="drunk">Drunk</option>
-                <option value="stoned">Stoned</option>
+                <option value="Happy">Happy</option>
+                <option value="Sad">Sad</option>
+                <option value="Comfortable">Comfortable</option>
+                <option value="Excited">Exciting</option>
+                <option value="Scared">Scary</option>
+                <option value="Drunk">Drunk</option>
+                <option value="Stoned">Stoned</option>
                 <option value="healthy">Healthy</option>
               </select><br>
 

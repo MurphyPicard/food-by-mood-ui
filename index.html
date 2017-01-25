@@ -23,19 +23,21 @@
       <h1 class="tagline">What are you in the mood for?</h1>
 
       <div class="container-top">
-
-        <select>
-          <option value="happy">Happy</option>
-          <option value="sad">Sad</option>
-          <option value="comfortable">Comfortable</option>
-          <option value="excited">Exciting</option>
-          <option value="scared">Scary</option>
-          <option value="drunk">Drunk</option>
-          <option value="stoned">Stoned</option>
-          <option value="healthy">Healthy</option>
+        <form>
+        <select id="mainSelect">
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Comfortable">Comfortable</option>
+          <option value="Excited">Exciting</option>
+          <option value="Scared">Scary</option>
+          <option value="Drunk">Drunk</option>
+          <option value="Stoned">Stoned</option>
+          <option value="Healthy">Healthy</option>
         </select>
+        <br>
 
         <button class="myButton" ng-click="getFoods()"><strong>Show me all the food!!!</strong></button>
+        </form>
       </div>
 
       <food-index></food-index>
