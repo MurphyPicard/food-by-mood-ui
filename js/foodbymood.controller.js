@@ -45,7 +45,6 @@
       FoodFactory.get()
         .then(function(res){
           FoodFactory.foods = res.data;
-            console.log(FoodFactory.foods);
             $scope.foods = FoodFactory.foods;
             $scope.food = undefined;
             var e = document.getElementById("mainSelect");
@@ -53,8 +52,11 @@
             var moodVal = e.options[e.selectedIndex].value;
             console.log(`this is what moodVal = ${moodVal}`);
 
-            //MONGO SEARCH WE NEED
-            //db.foods.find({"mood": moodVal})
+            for (var i = 0; i < $scope.foods.length; i++){
+              if (moodVal == $scope.foods[i].mood)
+              $scope.foods[i].title;
+            }
+
         })
         .catch(function(err){
           if(err)console.log(err);
