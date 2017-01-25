@@ -9,8 +9,8 @@ function foodShow() {
       template:
          `<div ng-show="food" class="container">
             <div class="food">
+              <h2>{{food.title}}</h2>
               <img src="{{food.photoUrl}}">
-              <h3>{{food.title}}</h3>
               <h5>{{food.prepTime}} minutes to prepare</h5>
               <h5>{{food.cookTime}} minutes to cook</h5>
               <h5>Ingredients: {{food.ingredients}}</h5>
