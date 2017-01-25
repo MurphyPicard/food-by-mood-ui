@@ -2,7 +2,8 @@ body {
   text-align: center;
   font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   margin:auto;
-  background-color: #F9EDCC; 
+  background-color: #F9EDCC;
+  color: #61210F;
 }
 .container {
   display: flex;
@@ -38,6 +39,7 @@ form {
   width: 250px;
   font-size: 20px;
   border-radius: 5px;
+  color: #61210F;
 }
 img {
   width: 300px;
