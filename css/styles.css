@@ -11,9 +11,12 @@ body {
   position: relative;
   top: -50px;
 }
+
 form {
   position: relative;
 }
+
+
 .title {
   font-size: 60px;
   background-color: #F9DF74;
@@ -56,6 +59,11 @@ img {
   border: 3px solid white;
   box-shadow: 5px 5px 5px gray;
 }
+
+.index-image:hover {
+  opacity: 0.7;
+}
+
 .food {
   background-color: #F9DF74;
   width: 400px;
