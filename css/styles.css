@@ -14,25 +14,25 @@ form {
 }
 .title {
   font-size: 60px;
-  background-color: #88D18A;
+  background-color: #62BEC1;
   padding-top: 50px;
   padding-bottom: 20px;
   position: relative;
   top: -60px;
   width: 100%;
   font-family: 'Pacifico', cursive;
-  color: #D64933;
+  color: #2B3A67;
 }
 .footer {
   font-size: 40px;
-  background-color: #88D18A;
+  background-color: #62BEC1;
   width: 100%;
   height: 40px;
 }
 .myButton {
   position: relative;
   top: -60px;
-  background-color: #88D18A;
+  background-color: #62BEC1;
   height: 50px;
   width: 250px;
   font-size: 20px;
@@ -45,7 +45,7 @@ img {
   box-shadow: 5px 5px 5px gray;
 }
 .food {
-  background-color: #88D18A;
+  background-color: #62BEC1;
   width: 400px;
   text-align: center;
   padding: 20px;
