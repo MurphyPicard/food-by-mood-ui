@@ -64,7 +64,7 @@ function foodShow() {
           </div>
 
           <div class="footer">
-          <p>Made by <a href="http://matt-connors.com/" target="_blank">Matthew Connors</a>, <a href="https://murphypicard.github.io/" target="_blank">Ara Yaghsizian</a>, and <a href="" target="_blank">Sandy Pok</a>.</p>
+          <p>Made by <a href="http://matt-connors.com/" target="_blank">Matthew Connors</a>, <a href="https://murphypicard.github.io/" target="_blank">Ara Yaghsizian</a>, and <a href="http://www.sandypok.com/" target="_blank">Sandy Pok</a>.</p>
           </div>`
 
 
