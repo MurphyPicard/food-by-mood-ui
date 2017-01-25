@@ -1,14 +1,43 @@
 (function(){
   angular
     .module('foodByMood')
-    .controller('FoodCtrl', FoodCtrl);
+    .controller('FoodCtrl', FoodCtrl)
+    .controller('MoodCtrl', MoodCtrl);
 
   FoodCtrl.$inject = ['$http', '$scope', 'FoodFactory'];
+  MoodCtrl.$inject = ['$http', '$scope', 'MoodFactory'];
+
+  var rootURL = 'http://localhost:3001/api';
+
+  function MoodCtrl($http, $scope, MoodFactory) {
+
+    //index
+    $scope.getMoods = function(){
+      MoodFactory.get()
+        .then(function(res){
+          MoodFactory.moods = res.data;
+            console.log(MoodFactory.moods);
+            $scope.moods = MoodFactory.moods;
+            $scope.mood = undefined;
+        })
+        .catch(function(err){
+          if(err)console.log(err);
+        });
+    };
+
+// SHOW
+    $scope.showMood = function(title){
+      $http.get(`${rootURL}/moods/${title}`)
+        .then(function(res){
+          $scope.mood = res.data;
+          console.log($scope.mood);
+        })
+        .catch(function(err){
+          if(err)console.log(err);
+        });
+    };
 
   function FoodCtrl($http, $scope, FoodFactory) {
-    // var self = this;
-    var rootURL = 'http://localhost:3001/api';
-
     //index
     $scope.getFoods = function(){
       FoodFactory.get()
@@ -74,4 +103,6 @@
         });
       };
     }
+
+
 })();
