@@ -46,8 +46,17 @@ function foodShow() {
               <label for="instructions">instructions</label><br>
               <input type="text" ng-model="food.instructions"><br>
 
-              <label for="mood">mood</label><br>
-              <input type="text" ng-model="food.mood"><br> <br><br>
+              <label for="mood">Mood</label><br>
+              <select ng-model="newFood.mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="comfortable">Comfortable</option>
+                <option value="excited">Exciting</option>
+                <option value="scared">Scary</option>
+                <option value="drunk">Drunk</option>
+                <option value="stoned">Stoned</option>
+                <option value="healthy">Healthy</option>
+              </select><br>
 
               <input type="submit" value="Edit Food">
             </form>
