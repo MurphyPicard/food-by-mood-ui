@@ -46,7 +46,7 @@
                 <option value="Sad">Sad</option>
                 <option value="Comfortable">Comfortable</option>
                 <option value="Excited">Exciting</option>
-                <option value="Scared">Scary</option>
+                <option value="Scary">Scary</option>
                 <option value="Drunk">Drunk</option>
                 <option value="Stoned">Stoned</option>
                 <option value="healthy">Healthy</option>
