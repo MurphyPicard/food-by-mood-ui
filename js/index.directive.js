@@ -42,10 +42,7 @@
 
               <label for="mood">Mood</label><br>
               <input type="text" ng-model="newFood.mood"><br>
-
-              <label for="votes">Votes</label><br>
-              <input type="text" ng-model="newFood.votes"><br>
-
+              
               <input type="submit" value="Submit">
 
               </form>
