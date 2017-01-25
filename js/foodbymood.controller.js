@@ -42,24 +42,24 @@
   function FoodCtrl($http, $scope, FoodFactory) {
     //index
     $scope.getFoods = function(){
+
       FoodFactory.get()
         .then(function(res){
+
           FoodFactory.foods = res.data;
-          for (var i = 0; i < FoodFactory.foods.length; i++){
-            if (moodVal == $scope.foods[i].mood)
-            $scope.foods[i].title;
-          }
+
             $scope.foods = FoodFactory.foods;
             $scope.food = undefined;
-            var e = document.getElementById("mainSelect");
-            // moodVal is the Value of the option element selected.
-            var moodVal = e.options[e.selectedIndex].value;
-            console.log(`this is what moodVal = ${moodVal}`);
+
 
             for (var i = 0; i < $scope.foods.length; i++){
               if (moodVal == $scope.foods[i].mood)
               $scope.foods[i].title;
             }
+
+            // var e = document.getElementById("mainSelect");
+            // // moodVal is the Value of the option element selected.
+            // var moodVal = e.options[e.selectedIndex].value;
 
         })
         .catch(function(err){
