@@ -53,6 +53,11 @@ form {
   color: #61210F;
   font-family: 'Shrikhand', cursive;
 }
+
+.myButton:hover {
+  background-color: #BCA858; 
+}
+
 img {
   width: 300px;
   border-radius: 5px;
