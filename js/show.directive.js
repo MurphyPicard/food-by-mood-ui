@@ -51,7 +51,7 @@ function foodShow() {
                 <option value="happy">Happy</option>
                 <option value="sad">Sad</option>
                 <option value="comfortable">Comfortable</option>
-                <option value="excited">Exciting</option>
+                <option value="exciting">Exciting</option>
                 <option value="scared">Scary</option>
                 <option value="drunk">Drunk</option>
                 <option value="stoned">Stoned</option>
