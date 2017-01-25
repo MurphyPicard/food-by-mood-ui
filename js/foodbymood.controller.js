@@ -25,6 +25,7 @@
         });
     };
 
+
 // SHOW
     $scope.showMood = function(title){
       $http.get(`${rootURL}/moods/${title}`)
@@ -36,6 +37,7 @@
           if(err)console.log(err);
         });
     };
+  }
 
   function FoodCtrl($http, $scope, FoodFactory) {
     //index

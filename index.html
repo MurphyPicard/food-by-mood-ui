@@ -15,7 +15,8 @@
     <script src="./js/foodbymood.factory.js" charset="utf-8"></script>
   </head>
 
-  <body data-ng-controller="FoodCtrl as main">
+  <body data-ng-controller="MoodCtrl as mood">
+    <div data-ng-controller="FoodCtrl as main">
 
       <h1 class="title">Food By Mood!</h1>
 
@@ -23,17 +24,17 @@
 
       <div class="container-top">
 
-        <select ng-repeat="e in moods">
-          <option ng-=>{{e.title}}</option>
+        <select ng-model="mood">
+          <option ng-repeat="m in moods">{{m.title}}</option>
+          <!-- <option value="happy">Happy</option>
           <option value="sad">Sad</option>
           <option value="comfortable">Comfortable</option>
           <option value="excited">Exciting</option>
           <option value="scared">Scary</option>
           <option value="drunk">Drunk</option>
           <option value="stoned">Stoned</option>
-          <option value="healthy">Healthy</option>
+          <option value="healthy">Healthy</option> -->
         </select>
-
 
         <button class="myButton" ng-click="getFoods()"><strong>Show me all the food!!!</strong></button>
       </div>
@@ -41,6 +42,6 @@
       <food-index></food-index>
 
       <food-show></food-show>
-
+    </div>
   </body>
 </html>
