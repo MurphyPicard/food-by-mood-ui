@@ -12,6 +12,21 @@ body {
   top: -50px;
 }
 
+.container-top {
+  position: relative;
+  top: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+select {
+width: 100px;
+  z-index: 50;
+  margin-bottom: 30px;
+}
+
 form {
   position: relative;
 }
@@ -43,8 +58,7 @@ form {
 }
 
 .myButton {
-  position: relative;
-  top: -60px;
+
   background-color: #F9DF74;
   height: 50px;
   width: 250px;

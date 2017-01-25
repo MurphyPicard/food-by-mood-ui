@@ -17,16 +17,26 @@
 
   <body data-ng-controller="FoodCtrl as main">
 
-    <h1 class="title">Food By Mood!</h1>
+      <h1 class="title">Food By Mood!</h1>
 
-    <h1 class="tagline">What are you in the mood for?</h1>
+      <h1 class="tagline">What are you in the mood for?</h1>
 
-      <button class="myButton" ng-click="getFoods()"><strong>Show me all the food!!!</strong></button>
+      <div class="container-top">
+
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
 
 
-    <food-index></food-index>
+        <button class="myButton" ng-click="getFoods()"><strong>Show me all the food!!!</strong></button>
+      </div>
 
-    <food-show></food-show>
+      <food-index></food-index>
+
+      <food-show></food-show>
 
   </body>
 </html>
