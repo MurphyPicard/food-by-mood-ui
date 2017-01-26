@@ -50,6 +50,7 @@
             $scope.food = undefined;
             var e = document.getElementById("mainSelect");
             // moodVal is the Value of the option element selected.
+
             var moodVal = e.options[e.selectedIndex].value;
 
 
@@ -65,6 +66,7 @@
 
             // set the scoped foods to the categories.
             $scope.foods = myArray;
+
         })
         .catch(function(err){
           if(err)console.log(err);
@@ -98,8 +100,10 @@
 
     //new
     $scope.createFood = function(food){
+      food.votes = 0;
       $http.post(`${rootURL}/foods`, food)
         .then(function(res){
+
           $scope.foods = res.data;
           console.log($scope.foods);
           $scope.getFoods();
@@ -121,6 +125,18 @@
           if(err)console.log(err);
         });
       };
+
+      $scope.voteUp = function(){
+        $scope.food.votes += 1;
+        $scope.editFood($scope.food);
+      };
+
+      $scope.voteDown = function(){
+        $scope.food.votes -= 1;
+        $scope.editFood($scope.food);
+      };
+
+
     }
 
 
