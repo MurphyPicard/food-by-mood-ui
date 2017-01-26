@@ -98,6 +98,16 @@ img {
   margin: 10px;
 }
 
+.showFoods {
+  background-color: #F9DF74;
+  width: 400px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
 .tagline {
   position: relative;
   top: -70px;

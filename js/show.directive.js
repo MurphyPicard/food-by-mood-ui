@@ -8,7 +8,7 @@ function foodShow() {
       restrict: 'E',
       template:
          `<div ng-show="food" class="container">
-            <div class="food">
+            <div class="food showFoods">
               <h2>{{food.title}}</h2>
               <img src="{{food.photoUrl}}">
               <h5>{{food.prepTime}} minutes to prepare</h5>
