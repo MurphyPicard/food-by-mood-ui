@@ -48,23 +48,23 @@
           FoodFactory.foods = res.data;
             $scope.foods = FoodFactory.foods;
             $scope.food = undefined;
-             var e = document.getElementById("mainSelect");
+            var e = document.getElementById("mainSelect");
             // moodVal is the Value of the option element selected.
-             var moodVal = e.options[e.selectedIndex].value;
-             
+            var moodVal = e.options[e.selectedIndex].value;
 
-             // Set a empty array for the matching moods/foods
-             var myArray = [];
-             for (var i = 0; i < $scope.foods.length; i++){
-               // if selected option matches a food in all foods then push it into myArray
-               if (moodVal == $scope.foods[i].mood){
-                 myArray.push($scope.foods[i]);
+
+            // Set a empty array for the matching moods/foods
+            var myArray = [];
+            for (var i = 0; i < $scope.foods.length; i++){
+              // if selected option matches a food in all foods then push it into myArray
+              if (moodVal == $scope.foods[i].mood){
+                myArray.push($scope.foods[i]);
               }
-             }
+            }
 
 
-             // set the scoped foods to the categories.
-             $scope.foods = myArray;
+            // set the scoped foods to the categories.
+            $scope.foods = myArray;
         })
         .catch(function(err){
           if(err)console.log(err);
