@@ -55,8 +55,10 @@
              console.log(`$scope.foods = ${JSON.stringify($scope.foods)}`);
              console.log(`$scope.foods.length = ${$scope.foods.length}`);
 
+             // Set a empty array for the matching moods/foods
              var myArray = [];
              for (var i = 0; i < $scope.foods.length; i++){
+               // if selected option matches a food in all foods then push it into myArray
                if (moodVal == $scope.foods[i].mood){
                console.log(`Matching foods = ${JSON.stringify($scope.foods[i].title)}`);
                myArray.push($scope.foods[i]);
@@ -64,6 +66,8 @@
               }
              }
              console.log(`myArray = ${JSON.stringify(myArray)}`);
+
+             // set the scoped foods to the categories.
              $scope.foods = myArray;
         })
         .catch(function(err){
