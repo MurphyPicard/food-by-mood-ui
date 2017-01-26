@@ -123,6 +123,18 @@
           if(err)console.log(err);
         });
       };
+
+      $scope.voteUp = function(){
+        $scope.food.votes += 1;
+        $scope.editFood($scope.food);
+      };
+
+      $scope.voteDown = function(){
+        $scope.food.votes -= 1;
+        $scope.editFood($scope.food);
+      };
+
+
     }
 
 

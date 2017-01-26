@@ -18,6 +18,8 @@ function foodShow() {
               <h5>{{food.instructions}}</h5>
               <h5>What's your mood?  {{food.mood}}</h5>
               <h5>Votes: {{food.votes}}</h5>
+              <h5 ng-click="voteUp()" class="vote">+</h5>
+              <h5 ng-click="voteDown()" class="vote">-</h5>
               <button ng-click="destroyFood(food.title)">Delete this food</button>
             </div>
           </div>
