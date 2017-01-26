@@ -12,6 +12,12 @@ body {
   top: -50px;
 }
 
+.container-votes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 .container-top {
   position: relative;
   top: -70px;
@@ -95,4 +101,10 @@ img {
 .tagline {
   position: relative;
   top: -70px;
+}
+
+.vote {
+  margin-top: 20px;
+  font-size: 30px;
+  padding: 5px;
 }
