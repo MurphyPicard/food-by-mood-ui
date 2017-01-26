@@ -45,21 +45,24 @@
 
       FoodFactory.get()
         .then(function(res){
-
           FoodFactory.foods = res.data;
-
             $scope.foods = FoodFactory.foods;
             $scope.food = undefined;
-
              var e = document.getElementById("mainSelect");
             // moodVal is the Value of the option element selected.
              var moodVal = e.options[e.selectedIndex].value;
-
+             console.log(`MoodVal = ${moodVal}`);
+             console.log(`$scope.foods = ${JSON.stringify($scope.foods)}`);
+             console.log(`$scope.foods.length = ${$scope.foods.length}`);
+             
+             var myArray = [];
              for (var i = 0; i < $scope.foods.length; i++){
                if (moodVal == $scope.foods[i].mood)
-               $scope.foods[i].title;
+               console.log(`Matching foods = ${JSON.stringify($scope.foods[i].title)}`);
+               myArray.push($scope.foods[i]);
              }
-
+             console.log(`myArray = ${JSON.stringify(myArray)}`);
+             $scope.foods = myArray;
         })
         .catch(function(err){
           if(err)console.log(err);
