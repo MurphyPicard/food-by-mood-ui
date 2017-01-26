@@ -51,15 +51,14 @@
             $scope.foods = FoodFactory.foods;
             $scope.food = undefined;
 
+             var e = document.getElementById("mainSelect");
+            // moodVal is the Value of the option element selected.
+             var moodVal = e.options[e.selectedIndex].value;
 
-            for (var i = 0; i < $scope.foods.length; i++){
-              if (moodVal == $scope.foods[i].mood)
-              $scope.foods[i].title;
-            }
-
-            // var e = document.getElementById("mainSelect");
-            // // moodVal is the Value of the option element selected.
-            // var moodVal = e.options[e.selectedIndex].value;
+             for (var i = 0; i < $scope.foods.length; i++){
+               if (moodVal == $scope.foods[i].mood)
+               $scope.foods[i].title;
+             }
 
         })
         .catch(function(err){
