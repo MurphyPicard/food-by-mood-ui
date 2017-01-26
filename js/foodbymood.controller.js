@@ -51,7 +51,7 @@
              var e = document.getElementById("mainSelect");
             // moodVal is the Value of the option element selected.
              var moodVal = e.options[e.selectedIndex].value;
-             
+
 
              // Set a empty array for the matching moods/foods
              var myArray = [];
@@ -98,8 +98,10 @@
 
     //new
     $scope.createFood = function(food){
+      food.votes = 0;
       $http.post(`${rootURL}/foods`, food)
         .then(function(res){
+
           $scope.foods = res.data;
           console.log($scope.foods);
           $scope.getFoods();
