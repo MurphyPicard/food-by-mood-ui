@@ -11,7 +11,7 @@
       return {
         foods: {},
         get: function(){
-          return $http.get(`http://localhost:3001/api/foods`);
+          return $http.get(`https://food-by-mood.herokuapp.com/api/foods`);
         }
       };
     }
@@ -20,7 +20,7 @@
       return {
         moods: {},
         get: function(){
-          return $http.get(`http://localhost:3001/api/moods`);
+          return $http.get(`https://food-by-mood.herokuapp.com/api/moods`);
         }
       };
     }
