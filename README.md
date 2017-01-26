@@ -1,33 +1,51 @@
-//this is what we need...
 
-The README.md file inside your front-end repo should have:
+A short description of our application:
 
-A short description of your application.
+  Food By Mood is an application where anyone can find foods and recipes based
+  on the mood they are in.  There are 8 main moods that users can choose from
+  and once a mood is chosen, the user can see all foods associated with that
+  mood, ranked by votes.  Every user has the ability to add, update, delete
+  and vote on foods as they wish.  When users update or create foods, they can
+  add descriptions, recipes etc.
 
-A brief explanation of the technologies (Node modules, Express middleware etc)
-used.
+A short description of the technologies used:
 
-A couple of paragraphs detailing the general approach you took.
+  This front-end application was built using Angular and Bootstrap, and is
+  dependant on Angular and HTTP.
 
-Notes on any unsolved problems or major hurdles your team had to overcome.
+The approach we took:
 
-Installation instructions for any dependencies.
+  Sandy, Matt and I all met up the weekend before to discuss project ideas and
+  foodbymood was the unanimous winner.  After doing the ERDs and wireframes and
+  discussing the schemas we would use and writing down tentative user stories,
+  on Monday morning when we started, we were ready to go.  This repository
+  contains all the front-end code and was made in unison with our back end api.
+  Using single model projects as references, we were able to get off to a good
+  start and figured out how to incorporate a second model in a one-to-many
+  relationship.  Some of the challenges we encountered and overcame were
+  using model relationships correctly, linking values to a selected value chosen
+  by the user, and displaying and storing users votes correctly.
 
-A link to your user stories – who are your users, what do they want, and why?
+User Stories listed here:
 
-A link to your ERD - what data models does your app use?
+  https://trello.com/b/gEoItTqs/food-by-mood
 
-A link to your wireframes – sketches of major views / interfaces in your
-application.
 
-A link to the deployed front-end app.
+A link to our ERD including Mood and Food models:
+
+  // put ERD link here////////////////////////////////////////////
+
+
+A link to our wireframes:
+
+  // put wireframes link here/////////////////////////////////////
+
+
+A link to the deployed front-end app:
+
+  // put heroku FRONT end link here ////////////////////////////////////////
+  
 
 A link to the repo for your back-end.
 
-
-
-# Food By Mood UI
-
-Food By Mood is an application where anyone can find recipes based on the mood
-they are in.  The front-end was built using Angular and Bootsrap.  The Backend
-API was built using MongoDB, Mongoose, and Express.
+  // put heroku BACK end link here ////////////////////////////////////////
