@@ -7,7 +7,7 @@
   FoodCtrl.$inject = ['$http', '$scope', 'FoodFactory'];
   MoodCtrl.$inject = ['$http', '$scope', 'MoodFactory'];
 
-  var rootURL = 'http://localhost:3001/api';
+  var rootURL = 'https://food-by-mood.herokuapp.com/api';
 
   function MoodCtrl($http, $scope, MoodFactory) {
 
