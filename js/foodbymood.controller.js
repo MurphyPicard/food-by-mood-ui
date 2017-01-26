@@ -51,21 +51,17 @@
              var e = document.getElementById("mainSelect");
             // moodVal is the Value of the option element selected.
              var moodVal = e.options[e.selectedIndex].value;
-             console.log(`MoodVal = ${moodVal}`);
-             console.log(`$scope.foods = ${JSON.stringify($scope.foods)}`);
-             console.log(`$scope.foods.length = ${$scope.foods.length}`);
+             
 
              // Set a empty array for the matching moods/foods
              var myArray = [];
              for (var i = 0; i < $scope.foods.length; i++){
                // if selected option matches a food in all foods then push it into myArray
                if (moodVal == $scope.foods[i].mood){
-               console.log(`Matching foods = ${JSON.stringify($scope.foods[i].title)}`);
-               myArray.push($scope.foods[i]);
-               console.log(`myArray in the loop is ${JSON.stringify(myArray)}`);
+                 myArray.push($scope.foods[i]);
               }
              }
-             console.log(`myArray = ${JSON.stringify(myArray)}`);
+
 
              // set the scoped foods to the categories.
              $scope.foods = myArray;
