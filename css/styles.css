@@ -29,9 +29,16 @@ body {
 }
 
 select {
-width: 131px;
+  width: 131px;
   z-index: 50;
   margin-bottom: 30px;
+}
+
+#mainSelect {
+  width: 180px;
+  height: 40px;
+  font-size: 20px;
+  text-align-last: center;
 }
 
 form {
