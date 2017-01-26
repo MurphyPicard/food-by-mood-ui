@@ -61,8 +61,10 @@
                  myArray.push($scope.foods[i]);
               }
              }
-
-
+             //Sort array by vote values
+             myArray.sort(function(a, b){
+               return b.votes-a.votes;
+             });
              // set the scoped foods to the categories.
              $scope.foods = myArray;
         })
