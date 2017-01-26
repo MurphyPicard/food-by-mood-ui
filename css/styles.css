@@ -104,7 +104,19 @@ img {
 }
 
 .vote {
-  margin-top: 20px;
+  margin: 20px;
   font-size: 30px;
   padding: 5px;
+}
+
+.change {
+  border: 2px solid #61210F;;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F9EDCC;
+}
+
+.change:hover {
+  background-color: #BCA858;
 }
