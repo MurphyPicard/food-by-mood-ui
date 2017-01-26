@@ -54,12 +54,14 @@
              console.log(`MoodVal = ${moodVal}`);
              console.log(`$scope.foods = ${JSON.stringify($scope.foods)}`);
              console.log(`$scope.foods.length = ${$scope.foods.length}`);
-             
+
              var myArray = [];
              for (var i = 0; i < $scope.foods.length; i++){
-               if (moodVal == $scope.foods[i].mood)
+               if (moodVal == $scope.foods[i].mood){
                console.log(`Matching foods = ${JSON.stringify($scope.foods[i].title)}`);
                myArray.push($scope.foods[i]);
+               console.log(`myArray in the loop is ${JSON.stringify(myArray)}`);
+              }
              }
              console.log(`myArray = ${JSON.stringify(myArray)}`);
              $scope.foods = myArray;

@@ -7,7 +7,7 @@
     return {
       restrict: 'E',
       template:
-        `<div ng-hide="food" ng-repeat="e in foods">
+        `<div ng-hide="food" ng-repeat="e in foods track by $index">
            <div class="container">
              <div class="food">
                <h2 ng-click="showFood(e.title)">{{e.title}}</h2>
@@ -45,11 +45,11 @@
                 <option value="Happy">Happy</option>
                 <option value="Sad">Sad</option>
                 <option value="Comfortable">Comfortable</option>
-                <option value="Excited">Exciting</option>
+                <option value="Exciting">Exciting</option>
                 <option value="Scary">Scary</option>
                 <option value="Drunk">Drunk</option>
                 <option value="Stoned">Stoned</option>
-                <option value="healthy">Healthy</option>
+                <option value="Healthy">Healthy</option>
               </select><br>
 
               <input type="submit" value="Submit">
