@@ -33,22 +33,22 @@ function foodShow() {
               <label for="title">Title</label><br>
               <input type="text" ng-model="food.title"><br>
 
-              <label for="photoUrl">photoUrl</label><br>
+              <label for="photoUrl">Photo URL</label><br>
               <input type="text" ng-model="food.photoUrl"><br>
 
-              <label for="prepTime">prepTime</label><br>
+              <label for="prepTime">Prep Time</label><br>
               <input type="text" ng-model="food.prepTime"><br>
 
-              <label for="cookTime">cookTime</label><br>
+              <label for="cookTime">Cook Time</label><br>
               <input type="text" ng-model="food.cookTime"><br>
 
-              <label for="ingredients">ingredients</label><br>
+              <label for="ingredients">Ingredients</label><br>
               <input type="text" ng-model="food.ingredients"><br>
 
-              <label for="description">description</label><br>
+              <label for="description">Description</label><br>
               <input type="text" ng-model="food.description"><br>
 
-              <label for="instructions">instructions</label><br>
+              <label for="instructions">Instructions</label><br>
               <input type="text" ng-model="food.instructions"><br>
 
               <label for="mood">Mood</label><br>

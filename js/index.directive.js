@@ -22,13 +22,13 @@
               <label for="title">Title</label><br>
               <input type="text" ng-model="newFood.title"><br>
 
-              <label for="photoUrl">Photo</label><br>
+              <label for="photoUrl">Photo URL</label><br>
               <input type="text" ng-model="newFood.photoUrl"><br>
 
-              <label for="preptime">Preptime</label><br>
+              <label for="preptime">Prep Time</label><br>
               <input type="text" ng-model="newFood.prepTime"><br>
 
-              <label for="cooktime">Cooktime</label><br>
+              <label for="cooktime">Cook Time</label><br>
               <input type="text" ng-model="newFood.cookTime"><br>
 
               <label for="ingredients">Ingredients</label><br>
