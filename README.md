@@ -28,12 +28,10 @@
   by the user, and displaying and storing users votes correctly.
 
 ##User Stories listed here:
-
   <https://trello.com/b/gEoItTqs/food-by-mood>
 
 
 ##A link to our ERD including Mood and Food models:
-
   <https://www.draw.io/#G0BzYThe1G82yiOVViTFlLbF9OVUE>
 
 
@@ -42,11 +40,11 @@
   // put wireframes link here/////////////////////////////////////
 
 
-##A link to the deployed front-end app:
-
+##A link to the back end repo:
   <https://github.com/mconnors333/food-by-mood-api>
 
+##A link to the back end api:
+  <https://food-by-mood.herokuapp.com/api/foods>
 
-##A link to the repo for your back-end.
-
-  <https://food-by-mood.herokuapp.com/>
+##A link to the deployed app:
+  <https://mconnors333.github.io/food-by-mood-ui/>
