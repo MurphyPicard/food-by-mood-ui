@@ -43,9 +43,9 @@
 
 ##A link to the deployed front-end app:
 
-  https://github.com/mconnors333/food-by-mood-api
+  <https://github.com/mconnors333/food-by-mood-api>
 
 
 ##A link to the repo for your back-end.
 
-  https://food-by-mood.herokuapp.com/
+  <https://food-by-mood.herokuapp.com/>
