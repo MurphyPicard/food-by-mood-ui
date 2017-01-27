@@ -34,11 +34,8 @@
 ##A link to our ERD including Mood and Food models:
   <https://www.draw.io/#G0BzYThe1G82yiOVViTFlLbF9OVUE>
 
-
 ##A link to our wireframes:
-
-  // put wireframes link here/////////////////////////////////////
-
+  <https://www.draw.io/#G0B2XPMaNAj8ttR3FqSXRKaENickE>
 
 ##A link to the back end repo:
   <https://github.com/mconnors333/food-by-mood-api>
