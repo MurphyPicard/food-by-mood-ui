@@ -11,6 +11,7 @@
            <div class="container">
              <div class="food">
                <h2 ng-click="showFood(e.title)">{{e.title}}</h2>
+               <h4 ng-click="showFood(e.title)">Votes:   {{e.votes}}</h4>
                <img class="index-image" ng-click="showFood(e.title)" ng-src="{{e.photoUrl}}">
              </div>
            </div>
