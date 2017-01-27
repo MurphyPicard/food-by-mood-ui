@@ -56,12 +56,24 @@
 
             // Set a empty array for the matching moods/foods
             var myArray = [];
-            for (var i = 0; i < $scope.foods.length; i++){
+
+            if (moodVal === "All") {
+
+              for (var i = 0; i < $scope.foods.length; i++){
+                // if selected option matches a food in all foods then push it into myArray
+                  myArray.push($scope.foods[i]);
+                }
+
+
+            } else {
+
+            for (var i = 0; i < $scope.foods.length; i++) {
               // if selected option matches a food in all foods then push it into myArray
               if (moodVal == $scope.foods[i].mood){
                 myArray.push($scope.foods[i]);
               }
             }
+          }
 
             //Sort array by vote values
             myArray.sort(function(a, b){
