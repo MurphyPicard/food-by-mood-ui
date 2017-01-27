@@ -82,7 +82,9 @@
     $scope.showFood = function(title){
       $http.get(`${rootURL}/foods/${title}`)
         .then(function(res){
+
           $scope.food = res.data;
+          $scope.food.vote = false;
           console.log($scope.food);
         })
         .catch(function(err){
@@ -132,12 +134,19 @@
       };
 
       $scope.voteUp = function(){
-        $scope.food.votes += 1;
+        if (!$scope.food.vote){
+          $scope.food.votes += 1;
+          $scope.food.vote = true;
+        }
+
         $scope.editFood($scope.food);
       };
 
       $scope.voteDown = function(){
-        $scope.food.votes -= 1;
+        if (!$scope.food.vote){
+          $scope.food.votes -= 1;
+          $scope.food.vote = true;
+        }
         $scope.editFood($scope.food);
       };
 

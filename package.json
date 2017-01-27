@@ -1,0 +1,22 @@
+{
+  "name": "food-by-mood-ui",
+  "version": "1.0.0",
+  "description": "##A short description of our application:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mconnors333/food-by-mood-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mconnors333/food-by-mood-ui/issues"
+  },
+  "homepage": "https://github.com/mconnors333/food-by-mood-ui#readme",
+  "dependencies": {
+    "angular-cookies": "^1.5.8"
+  }
+}
