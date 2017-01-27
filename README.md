@@ -1,5 +1,5 @@
 
-A short description of our application:
+##A short description of our application:
 
   Food By Mood is an application where anyone can find foods and recipes based
   on the mood they are in.  There are 8 main moods that users can choose from
@@ -8,12 +8,12 @@ A short description of our application:
   and vote on foods as they wish.  When users update or create foods, they can
   add descriptions, recipes etc.
 
-A short description of the technologies used:
+##A short description of the technologies used:
 
   This front-end application was built using Angular and Bootstrap, and is
   dependant on Angular and HTTP.
 
-The approach we took:
+##The approach we took:
 
   Sandy, Matt and I all met up the weekend before to discuss project ideas and
   foodbymood was the unanimous winner.  After doing the ERDs and wireframes and
@@ -26,26 +26,26 @@ The approach we took:
   using model relationships correctly, linking values to a selected value chosen
   by the user, and displaying and storing users votes correctly.
 
-User Stories listed here:
+##User Stories listed here:
 
   https://trello.com/b/gEoItTqs/food-by-mood
 
 
-A link to our ERD including Mood and Food models:
+##A link to our ERD including Mood and Food models:
 
-  // put ERD link here////////////////////////////////////////////
+  https://www.draw.io/#G0BzYThe1G82yiOVViTFlLbF9OVUE
 
 
-A link to our wireframes:
+##A link to our wireframes:
 
   // put wireframes link here/////////////////////////////////////
 
 
-A link to the deployed front-end app:
+##A link to the deployed front-end app:
 
-  // put heroku FRONT end link here ////////////////////////////////////////
-  
+  https://github.com/mconnors333/food-by-mood-api
 
-A link to the repo for your back-end.
 
-  // put heroku BACK end link here ////////////////////////////////////////
+##A link to the repo for your back-end.
+
+  https://food-by-mood.herokuapp.com/
