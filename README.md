@@ -10,7 +10,7 @@
 
 ##A short description of the technologies used:
 
-  This front-end application was built using Angular and Bootstrap, and is
+  This front-end application was built using Angular and is
   dependant on Angular and HTTP.
 
 ##The approach we took:
@@ -28,12 +28,12 @@
 
 ##User Stories listed here:
 
-  https://trello.com/b/gEoItTqs/food-by-mood
+  <https://trello.com/b/gEoItTqs/food-by-mood>
 
 
 ##A link to our ERD including Mood and Food models:
 
-  https://www.draw.io/#G0BzYThe1G82yiOVViTFlLbF9OVUE
+  <https://www.draw.io/#G0BzYThe1G82yiOVViTFlLbF9OVUE>
 
 
 ##A link to our wireframes:
