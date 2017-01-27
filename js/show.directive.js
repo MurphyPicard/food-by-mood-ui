@@ -55,13 +55,12 @@ function foodShow() {
               <select ng-model="food.mood">
                 <option value="Happy">Happy</option>
                 <option value="Sad">Sad</option>
-                <option value="Comfortable">Comfortable</option>
-                <option value="Exciting">Exciting</option>
-                <option value="Scary">Scary</option>
-                <option val
-                ue="Drunk">Drunk</option>
-                <option value="Stoned">Stoned</option>
                 <option value="Healthy">Healthy</option>
+                <option value="Comfortable">Comfortable</option>
+                <option value="Exciting">Excited</option>
+                <option value="Scary">Scared</option>
+                <option value="Drunk">Drunk</option>
+                <option value="Stoned">Stoned</option>
               </select><br>
 
               <input type="submit" value="Edit Food">
